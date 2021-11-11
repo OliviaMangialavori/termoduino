@@ -9,7 +9,7 @@ def hello_world():
 @app.route("/save_temp/<temp>")
 def save_temp(temp):
   if float(temp) < 10:
-    return f"<h1>Frio</h1>"
+    return f"<h1>{temp} grados es mucho Frio</h1>"
   elif float(temp) < 20:
     return f"<h1>Fresco</h1>"
   elif float(temp) < 30:
